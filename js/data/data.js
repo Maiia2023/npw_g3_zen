@@ -14,7 +14,7 @@ export const data = {
         source: 'assets/images/1.jpg',
         description: 'some description for image 1',
       },
-      links: {
+      link: {
         apple: {
           url: 'https://apple.com',
         },
