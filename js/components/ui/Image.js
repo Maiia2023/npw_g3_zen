@@ -9,16 +9,16 @@
  */
 
 export const Image = (image, parentClassName) => {
-  if (!image) return '';
+  if (Object.values(image).length !== 2) return '';
 
   const currentClassName = parentClassName
     ? `${parentClassName}__image`
     : 'image';
 
   return `
-    <img
-    class="${currentClassName}" 
-    crs="${image.source}"
+  <img 
+    class="${currentClassName}"
+    src="${image.source}"
     alt="${image.description}"
     >
   `;
