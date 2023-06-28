@@ -12,6 +12,8 @@ export const Text = (text, parentClassName) => {
     : 'copy';
 
   return `
-    <p class="${currentClassName}">${text}</p>
+    <p class="${currentClassName}">
+      ${text}
+    </p>
   `;
 };
