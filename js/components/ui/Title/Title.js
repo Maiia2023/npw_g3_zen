@@ -1,21 +1,16 @@
-/**
- * @typedef {Object} DataType
- * @property {string | number} priority
- * @property {string} content
- */
+/** @typedef {import('./types').Title} Title */
 
 /**
- * Компонент для создания заголовка
  * @function Title
- * @param {DataType} data
+ * @param {Title} title
  * @param {string} parentClassName 
  * @returns {string} - HTML or empty
  */
 
-export const Title = (data, parentClassName) => {
-  if (Object.values(data).length !== 2) return '';
+export const Title = (title, parentClassName) => {
+  if (Object.values(title).length !== 2) return '';
 
-  const {priority, content} = data;
+  const {priority, content} = title;
   const currentClassName = parentClassName
     ? `${parentClassName}__title`
     : 'title';
