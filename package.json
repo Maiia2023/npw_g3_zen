@@ -1,0 +1,26 @@
+{
+  "name": "zen-npw",
+  "version": "1.0.0",
+  "description": "Banking web application written in native js",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Maiia2023/npw_g3_zen.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Maiia2023/npw_g3_zen/issues"
+  },
+  "homepage": "https://github.com/Maiia2023/npw_g3_zen#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.2",
+    "@types/node": "^20.3.1",
+    "jest": "^29.5.0"
+  }
+}
