@@ -1,10 +1,8 @@
-import { data } from './data/data.js';
-import { Section } from './components/widgets/Section.js';
+import { data } from './data.js';
+import { SectionPrimary } from './components/widgets/SectionPrimary/SectionPrimary.js';
 
-const { download, warranty } = data.en;
+const { download } = data.en;
 
 const root = document.querySelector('#root');
 
-root.insertAdjacentHTML('beforeend', Section(download));
-//root.insertAdjacentHTML('beforeend', Section(download));
-//root.insertAdjacentHTML('beforeend', Section(warranty));
+root.insertAdjacentHTML('beforeend', SectionPrimary(download));
