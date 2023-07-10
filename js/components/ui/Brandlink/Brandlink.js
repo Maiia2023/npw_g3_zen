@@ -1,24 +1,32 @@
+import {IconApple} from './IconApple.js';
+import {IconGoogle} from './IconGoogle.js';
+
 /** @typedef {import('./types').Link} Link */
 
 /**
  * @function BrandLink
  * @param {Link} link
- * @param {string} className
+ * @param {'apple' | 'google'} type
+ * @param {string} parentClassName
  * @returns {string} html or empty
  */
 
-export const BrandLink = (link, className = 'brand-link') => {
-  if (Object.values(link).lenght !== 2) return '';
+export const BrandLink = (link, type, parentClassName) => {
 
-  const {url, type} = link;
+  if (!('url' in link)) return '';
+
+  const { url } = link;
+
+  const currentClassName = parentClassName
+    ? `${parentClassName}__link`
+    : 'link';
 
   return `
     <a 
       href="${url}"
-      class="${className}"
+      class="${currentClassName}"
     >
-      ${type === 'apple' && IconApple()}
-      ${type === 'google' && IconGoogle()}
+      ${type === 'apple' ? IconApple() : IconGoogle()}
     </a>
   `;
 };
