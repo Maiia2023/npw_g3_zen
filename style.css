@@ -11,6 +11,11 @@ img {
   font-weight: 400;
 }
 
+.app.dark {
+  background: #333;
+  color: #fff;
+}
+
 body {
   color: #000;
   /* padding-top: 50px; */
@@ -40,6 +45,13 @@ button {
   left: 0;
   right: 0;
   z-index: 1;
+  color: #000;
+  background: #fff;
+}
+
+.header.dark {
+  color: #fff;
+  background: #333;
 }
 
 .header::after {
@@ -49,11 +61,11 @@ button {
   top: 0;
   left: 0;
   right: 0;
-  background: #fff;
   position: absolute;
   z-index: 2;
   border-bottom: solid 1px #aaa;
-  /* box-shadow: 0px 0px 15px; */
+  background: inherit;
+  box-shadow: 0px 0px 15px;
 }
 
 .header__wrapper {
@@ -64,34 +76,34 @@ button {
 }
 
 .header__logo {
-  border: dashed 2px blue;
   height: 30px;
   width: 77px;
+  color: currentColor;
   z-index: 3;
 }
 
-.header__logo img {
+.header__logo svg {
   height: 100;
   width: 100;
   display: block;
   object-fit: cover;
+  fill: currentColor;
 }
 
-.header__nav {
-  border: dashed 2px orange;
-}
+/* .header__nav {} */
 
 .header__buttons {
   margin-left: auto;
   display: flex;
   align-items: center;
   z-index: 3;
-  border: dashed 2px orangered;
 }
 
 .header__lang {
   height: 30px;
-  border: solid 1px black;
+  color: currentColor;
+  background: inherit;
+  border: solid 1px currentColor;
   border-radius: 4px;
 }
 
@@ -99,42 +111,46 @@ button {
   margin-left: 20px;
   height: 26px;
   width: 26px;
-  border: dashed 1px orange;
+  color: currentColor;
+}
+
+.header__theme svg {
+  fill: currentColor;
 }
 
 .header__burger {
   margin-left: 20px;
+  position: relative;
   height: 20px;
   width: 30px;
-  border: dashed 2px orange;
-  position: relative;
+  color: currentColor;
 }
 
 .header__burger span {
   display: block;
   height: 2px;
   width: 100%;
-  background: black;
+  background: currentColor;
 }
 
 .header__burger::before {
   content: '';
+  position: absolute;
+  top: 0;
   display: block;
   height: 2px;
   width: 100%;
-  background: black;
-  position: absolute;
-  top: 0;
+  background: currentColor;
 }
 
 .header__burger::after {
   content: '';
+  position: absolute;
+  bottom: 0;
   display: block;
   height: 2px;
   width: 100%;
-  background: black;
-  position: absolute;
-  bottom: 0;
+  background: currentColor;
 }
 
 .header__burger.active::before {
@@ -153,7 +169,8 @@ button {
 
 /*menu*/
 
-.menu {
+.header__menu {
+  display: none;
   position: fixed;
   top: 50px;
   /* top: -100%; */
@@ -164,8 +181,9 @@ button {
   /* box-shadow: 0px 0px 15px; */
 }
 
-.menu.active {
+.header__menu.active {
   top: 50px;
+  display: block;
 }
 
 .menu__item {
