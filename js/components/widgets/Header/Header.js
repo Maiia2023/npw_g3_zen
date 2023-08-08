@@ -20,12 +20,12 @@ export const Header = (data) => {
   const className = name ? name : 'header';
 
   return `
-    <header class="${className}">
+    <header class="${className}" id="header">
       <div class="${className}__wrapper">
         ${Logo(className)}
         ${Navigation(nav, className)}
         <div class="${className}__buttons">
-          ${Lang (langs, className)}
+          ${Lang(className)}
           ${Theme(className)}
           ${Burger(className)}
         </div>
