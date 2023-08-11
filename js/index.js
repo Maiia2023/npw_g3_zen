@@ -1,14 +1,25 @@
 import { data } from './data.js';
-import { Header } from './components/widgets/Header/Header.js';
-import { SectionPrimary } from './components/widgets/SectionPrimary/SectionPrimary.js';
-import { handleThemeClick } from './handlers.js';
 
-const { header, download } = data.en;
+import { 
+  Header,
+  SectionPrimary,
+  SectionSecondary }
+from './widgets/index.js';
+
+import { 
+  handleThemeClick,
+} from './handlers.js';
 
 const root = document.querySelector('#root');
 
-root.insertAdjacentHTML('beforeend', Header(header));
-root.insertAdjacentHTML('beforeend', SectionPrimary(download));
+const { en } = data;
+
+root.insertAdjacentHTML('beforeend', Header(en.header));
+root.insertAdjacentHTML('beforeend', SectionPrimary(en.download));
+root.insertAdjacentHTML('beforeend', SectionPrimary(en.warranty));
+root.insertAdjacentHTML('beforeend', SectionPrimary(en.care));
+root.insertAdjacentHTML('beforeend', SectionSecondary(en.cashback));
 
 const $theme = document.querySelector('#theme');
-$theme.addEventListener('click', handleThemeClick)
+$theme.addEventListener('click', handleThemeClick);
+

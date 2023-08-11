@@ -1,14 +1,16 @@
-import { Logo } from '../../features/Logo/Logo.js';
-import { Navigation } from '../../features/Navigation/Navigation.js';
-import { Lang } from '../../features/Lang/Lang.js';
-import { Theme } from '../../features/Theme/Theme.js';
-import { Burger } from '../../features/Burger/Burger.js';
+import {
+  Logo,
+  Navigation,
+  Lang,
+  Theme,
+  Burger
+} from '../../features/index.js';
 
-/** @typedef {import('./types').HeaderData} Data */
+/** @typedef {import('./types').Props} Props */
 
 /**
  * @function Header
- * @param {Data} data
+ * @param {Props} data
  * @returns {string}
  */
 
