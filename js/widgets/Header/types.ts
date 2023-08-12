@@ -1,4 +1,4 @@
-export type HeaderData = {
+export type Props = {
   name: string;
   nav: {
     target: string;

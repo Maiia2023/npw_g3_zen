@@ -1,13 +1,16 @@
-import { Title } from '../../ui/Title/Title.js';
-import { Text } from '../../ui/Text/Text.js';
-import { Image } from '../../ui/Image/Image.js';
-import { BrandLink } from '../../ui/Brandlink/Brandlink.js';
+import {
+  Title,
+  Text,
+  Image,
+} from '../../shared/ui/index.js';
 
-/** @typedef {import('../../../schema/types').SectionPrimary } Data */
+import { BrandLink } from '../../features/index.js';
+
+/** @typedef {import('./types').Props } Props */
 
 /**
  * @function SectionPrimary
- * @param {Data} data
+ * @param {Props} data
  * @returns {string}
  */
 
@@ -19,7 +22,7 @@ export const SectionPrimary = (data) => {
 
   const { name, title, texts, image, links } = data;
 
-  const { apple, google } = links;
+  const { apple, google } = links || {};
 
   const className = name
     ? name

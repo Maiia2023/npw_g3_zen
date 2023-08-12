@@ -1,7 +1,6 @@
-import {IconApple} from './IconApple.js';
-import {IconGoogle} from './IconGoogle.js';
+import { IconApple, IconGoogle } from '../../shared/Icons/index.js';
 
-/** @typedef {import('./types').Link} Link */
+/** @typedef {import('./types.js').Link} Link */
 
 /**
  * @function BrandLink

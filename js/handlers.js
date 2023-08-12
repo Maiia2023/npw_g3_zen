@@ -1,8 +1,7 @@
-import { IconSun } from './components/features/Theme/ui/IconSun.js';
-import { IconMoon } from './components/features/Theme/ui/IconMoon.js';
+import { IconSun, IconMoon } from './shared/Icons/index.js';
 
 export const handleThemeClick = (event) => {
-  
+
   const { currentTarget } = event;
   const { theme } = currentTarget.dataset;
 
