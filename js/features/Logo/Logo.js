@@ -1,4 +1,4 @@
-import { IconLogo } from '../../shared/Icons/index.js';
+import { IconLogo } from '../../shared/icons/index.js';
 
 /**
  * @function Logo
@@ -8,8 +8,8 @@ import { IconLogo } from '../../shared/Icons/index.js';
 
 export const Logo = (parentClassName) => {
 
-  const currentClassName = parentClassName 
-    ? `${parentClassName}__logo` 
+  const currentClassName = parentClassName
+    ? `${parentClassName}__logo`
     : 'logo';
 
   return `
