@@ -19,10 +19,9 @@ export const BrandClient = (brand, parentClassName) => {
 
   return `
     <img
+      data-type="brand"
       src="${source}"
-      class="${currentClassName}"
       alt="${description}"
-      data-name="brand"
     />
   `;
 };

@@ -1,4 +1,4 @@
-import { IconMoon, IconSun } from '../../shared/Icons/index.js';
+import { IconMoon, IconSun } from '../../shared/icons/index.js';
 
 /**
  * @function Theme
