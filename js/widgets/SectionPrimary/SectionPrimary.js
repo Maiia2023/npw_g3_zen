@@ -29,12 +29,18 @@ export const SectionPrimary = (data) => {
     : 'section-primary';
 
   return `
-    <section class="${className}">
-      ${title ? Title(title, className) : ''}
-      ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
-      ${apple ? BrandLink(apple, 'apple', className) : ''}
-      ${google ? BrandLink(google, 'google', className) : ''}
-      ${image ? Image(image, className) : ''}
+    <section class="${className}" id="${name}">
+      <div class="${className}__wrapper">
+        <div class="${className}__text-block">
+          ${title ? Title(title, className) : ''}
+          ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
+          ${image ? Image(image, className) : ''}
+          <div class="${className}__links">
+            ${google ? BrandLink(google, 'google', className) : ''}
+            ${apple ? BrandLink(apple, 'apple', className) : ''}
+          </div>
+        </div>
+      </div>
     </section>
   `;
 };

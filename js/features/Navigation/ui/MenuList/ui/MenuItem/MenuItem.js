@@ -13,7 +13,7 @@ export const MenuItem = (menuItem, parentClassName) => {
   const { target, content } = menuItem;
 
   const currentClassName = parentClassName
-    ? `${parentClassName}__item`
+    ? `${parentClassName}__menu-item`
     : 'menu-item';
 
   return `
