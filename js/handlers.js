@@ -30,3 +30,22 @@ export const handleThemeClick = (event) => {
     header.classList.remove('dark');
   };
 };
+
+/**
+ * @function handleBurgerClick
+ * @param {Event} event 
+ */
+
+export const handleBurgerClick = (event) => {
+  const {currentTarget} = event;
+  currentTarget.classList.contains('active');
+  const $menu = document.querySelector('#menu');
+
+  if (currentTarget.classList.contains('active')) {
+    $menu.classList.add('active');
+  };
+
+  if (!currentTarget.classList.contains('active')) {
+    $menu.classList.remove('active');
+  };
+};

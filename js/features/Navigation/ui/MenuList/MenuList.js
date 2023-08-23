@@ -17,7 +17,7 @@ export const MenuList = (menulist, parrentClassName) => {
     : 'menu';
 
   return `
-    <ul class="${currentClassName}">
+    <ul class="${currentClassName}" id="menu">
       ${menulist.map((menuItem) => MenuItem(menuItem, parrentClassName)).join('')}
     </ul>
   `;
