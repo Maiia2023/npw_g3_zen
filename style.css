@@ -419,3 +419,32 @@ button {
 
 .column__item {
 }
+
+/*modal*/
+
+.modal {
+  /* display: none; */
+}
+
+.modal__body {
+  position: absolute;
+  width: 290px;
+
+
+}
+
+.modal__title {
+
+}
+
+.modal__form {
+
+}
+
+.form__field {
+
+}
+
+.form__submit {
+
+}
