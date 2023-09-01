@@ -1,0 +1,35 @@
+/*care*/
+
+.care {
+  border: dashed 2px yellowgreen;
+  padding: 30px 15px;
+}
+
+.care__wrapper {
+}
+
+.care__text-block {
+}
+
+.care__title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.care__copy {
+  margin-top: 10px;
+}
+
+.care__copy:first-of-type {
+  margin-top: 20px;
+}
+
+.care__image-block {
+  margin-top: 30px;
+  border: 1px solid #aaaa;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.care__image {
+}

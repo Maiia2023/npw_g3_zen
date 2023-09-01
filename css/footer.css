@@ -1,0 +1,27 @@
+/*footer*/
+
+.footer {
+  background: #484848;
+  color: fff;
+}
+
+.footer__wrapper {
+  padding: 30px 15px;
+}
+
+.footer__columns {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.footer__info {
+}
+
+.footer__logo {
+}
+
+.footer__copy {
+}
+
+.footer__dev {
+}

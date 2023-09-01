@@ -1,0 +1,24 @@
+/*cashback*/
+
+.cashback {
+  border: dashed 2px blue;
+  padding: 30px 15px;
+}
+
+.cashback__wrapper {
+}
+
+.cashback__text-block {
+}
+
+.cashback__title {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.cashback__copy {
+  margin-top: 10px;
+}
+
+.cashback__button {
+}

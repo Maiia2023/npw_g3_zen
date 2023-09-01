@@ -1,0 +1,50 @@
+/*download*/
+
+.download {
+  border: dashed 2px red;
+  padding: 30px 15px;
+  background: #fff;
+}
+
+.download__wrapper {
+  padding: 30px 15px
+}
+
+.download__text-block {
+}
+
+.download__title {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.download__copy {
+  margin-top: 10px;
+}
+
+.download__links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.download__link {
+  display: block;
+  width: 150px;
+  height: 44px;
+}
+
+.download__link:last-child {
+  margin-top: 20px;
+}
+
+.download__image-block {
+  margin-top: 30px;
+  border: 1px solid #aaaa;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.download__image {
+  display: block;
+}

@@ -1,0 +1,72 @@
+.modal {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.modal__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.form {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form__field {
+  height: 26px;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.form__field input {
+  height: 100%;
+  width: 100%;
+  display: block;
+  font-size: 16px;
+  padding-left: 5px;
+  font-family: 'Nunito';
+  color: #aaa;
+  border: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.form__field select {
+  height: 26px;
+  width: 100%;
+  left: 35px;
+  top: 306.5px;
+  font-family: 'Nunito';
+  font-size: 16px;
+  color: #aaa;
+  border: none;
+  border-bottom: 1px solid #aaa;
+}
+
+.form__field input[type="checkbox"] {
+  height: 14px;
+  top: 347.5px;
+  left: 35px;
+  width: 14px;
+}
+
+.form__field a {
+  margin-left: 5px;
+  text-decoration: underline;
+}
+
+.form__submit {
+  height: 40px;
+  width: 100%;
+  padding: 0px 0px 0px 5px;
+  margin-top: 20px;
+  border-radius: 30px;
+  color: #aaa;
+  border: 1px solid #aaa;
+};
