@@ -10,6 +10,7 @@ import {
 import { 
   handleThemeClick,
   handleBurgerClick,
+  handleButtonModalOpenOrderClick,
 } from './handlers.js';
 
 const root = document.querySelector('#root');
@@ -25,6 +26,11 @@ root.insertAdjacentHTML('beforeend', SectionTertiary(en.clients));
 
 
 const $theme = document.querySelector('#theme');
-const $burger = document.querySelector('#burger');
 $theme.addEventListener('click', handleThemeClick);
+
+const $burger = document.querySelector('#burger');
 $burger.addEventListener('click', handleBurgerClick);
+
+const $buttonModalOpenOrder = document.querySelector('#modal-order-open');
+$buttonModalOpenOrder.addEventListener('click', handleButtonModalOpenOrderClick);
+
