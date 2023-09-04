@@ -5,6 +5,7 @@ import {
   SectionPrimary,
   SectionSecondary,
   SectionTertiary,
+  Order,
 } from './widgets/index.js';
 
 import { 
@@ -22,7 +23,7 @@ root.insertAdjacentHTML('beforeend', SectionPrimary(en.warranty));
 root.insertAdjacentHTML('beforeend', SectionPrimary(en.care));
 root.insertAdjacentHTML('beforeend', SectionSecondary(en.cashback));
 root.insertAdjacentHTML('beforeend', SectionTertiary(en.clients));
-
+root.insertAdjacentHTML('beforeend', Order());
 
 const $theme = document.querySelector('#theme');
 const $burger = document.querySelector('#burger');

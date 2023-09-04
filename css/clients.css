@@ -1,0 +1,23 @@
+/*clients*/
+
+.clients {
+  border: dashed 2px;
+  background: inherit;
+}
+
+.clients__title {
+  display: none;
+}
+
+.clients__wrapper {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 130px 30px 130px;
+  padding: 30px 15px;
+}
+
+.clients__text-block {
+}
+
+.clients__brands {
+}
