@@ -49,48 +49,19 @@ export const handleThemeClick = (event) => {
 
 /**
  * @function handleBurgerClick
- * @param {Event} event
+ * @param {Event} event 
  */
 
 export const handleBurgerClick = (event) => {
   const {currentTarget} = event;
   currentTarget.classList.contains('active');
   const $menu = document.querySelector('#menu');
-
+  
   if (currentTarget.classList.contains('active')) {
     $menu.classList.add('active');
   };
 
   if (!currentTarget.classList.contains('active')) {
     $menu.classList.remove('active');
-  };
-};
-
-/**
- * @function handleNameInput
- * @param {Event} event
- * @returns {void}
- */
-
-export const handleNameInput = (event) => {
-  const { currentTarget } = event;
-  const { value } = currentTarget;
-
-  if (!value.length) {
-    currentTarget.dataset.valid = false;
-    currentTarget.parentElement.lassList.remove('invalid');
-    currentTarget.parentElement.lassList.remove('valid');
-  };
-
-  if (value.length === 1) {
-    currentTarget.dataset.valid = false;
-    currentTarget.parentElement.lassList.remove('valid');
-    currentTarget.parentElement.lassList.add('invalid');
-  };  
-
-  if (value.length > 1) {
-    currentTarget.dataset.valid = true;
-    currentTarget.parentElement.lassList.remove('invalid');
-    currentTarget.parentElement.lassList.add('valid');
   };
 };
