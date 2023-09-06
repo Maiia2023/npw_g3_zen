@@ -14,8 +14,12 @@ export const Button = (buttonText, parentClassName) => {
     : 'button';
 
   return `
-    <button class="${currentClassName}">
-      ${buttonText}
+    <button 
+      class="${currentClassName}" 
+      id="modal-order-open"
+      data-modal-open="false"
+      >
+        ${buttonText}
     </button>
   `;
 };
