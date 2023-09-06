@@ -23,6 +23,15 @@
   display: flex;
   align-items: center;
   margin-top: 15px;
+  border-bottom: 1px solid #aaa;
+}
+
+.form__field.valid {
+  border-color: rgb(30, 180, 30) ;
+}
+
+.form__field.invalid {
+  border-color: rgb(233, 9, 72) ;
 }
 
 .form__field input {
@@ -34,7 +43,7 @@
   font-family: 'Nunito';
   color: #aaa;
   border: none;
-  border-bottom: 1px solid #aaa;
+  outline: none;
 }
 
 .form__field select {
@@ -69,4 +78,10 @@
   border-radius: 30px;
   color: #aaa;
   border: 1px solid #aaa;
+  cursor: pointer;
 };
+
+.form__submit:disabled {
+  opacity: 0.3;
+  cursor: no-drop;
+}

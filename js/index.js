@@ -11,6 +11,7 @@ import {
 import { 
   handleThemeClick,
   handleBurgerClick,
+  handleNameInput,
 } from './handlers.js';
 
 const root = document.querySelector('#root');
@@ -29,3 +30,16 @@ const $theme = document.querySelector('#theme');
 const $burger = document.querySelector('#burger');
 $theme.addEventListener('click', handleThemeClick);
 $burger.addEventListener('click', handleBurgerClick);
+
+const $inputName = document.querySelector('#input-name');
+$inputName.addEventListener('input', handleNameInput);
+
+const $inputTel = document.querySelector('#input-tel');
+
+const $inputEmail = document.querySelector('#input-email');
+
+const $selectConnection = document.querySelector('#select-connection');
+
+const $orderForm = document.querySelector('#order-form');
+$orderForm.addEventListener('keyup', () => console.log('form keyup'));
+$orderForm.addEventListener('click', () => console.log('form click'));
