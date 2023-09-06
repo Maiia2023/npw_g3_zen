@@ -49,19 +49,37 @@ export const handleThemeClick = (event) => {
 
 /**
  * @function handleBurgerClick
- * @param {Event} event 
+ * @param {Event} event
+ * @returns {void}
  */
 
 export const handleBurgerClick = (event) => {
   const {currentTarget} = event;
   currentTarget.classList.contains('active');
   const $menu = document.querySelector('#menu');
-
+  
   if (currentTarget.classList.contains('active')) {
     $menu.classList.add('active');
   };
 
   if (!currentTarget.classList.contains('active')) {
     $menu.classList.remove('active');
+  };
+};
+
+/**
+ * @function handleButtonModalOpenOrderClick
+ * @param {Event} event
+ * @returns {void}
+ */
+
+export const handleButtonModalOpenOrderClick = ({ currentTarget }) => {
+  const isModalOpen = currentTarget.dataset.modalOpen === 'true';
+  
+  if (!isModalOpen) {
+    currentTarget.dataset.modalOpen = 'true';
+  };
+  if (isModalOpen) {
+    currentTarget.dataset.modalOpen = 'false';
   };
 };
