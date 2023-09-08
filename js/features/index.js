@@ -4,4 +4,5 @@ export { Lang } from './Lang/Lang.js';
 export { Theme } from './Theme/Theme.js';
 export { Burger } from './Burger/Burger.js';
 export { BrandLink } from './Brandlink/Brandlink.js';
-export { ModalOrder } from './ModalOrder/ModalOrder.js';
+export { ModalOrderForm } from './ModalOrderForm/ModalOrderForm.js';
+export { ModalOrderOpen } from './ModalOrderOpen/ModalOrderOpen.js';
