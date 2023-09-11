@@ -1,25 +1,34 @@
 /**
  * @function Button
- * @param {string} buttonText 
- * @param {string} parentClassName 
+ * @param {ButtonProps} props 
  * @returns {string}
  */
 
-export const Button = (buttonText, parentClassName) => {
-  
-  if (!buttonText) return '';
+export const Button = (props) => {
 
-  const currentClassName = parentClassName
-    ? `${parentClassName}__button` 
+  const { className, buttonId, customId, children } = props;
+  
+  if (!children) return '';
+
+  const currentClassName = className
+    ? `button ${className}` 
     : 'button';
+
+  const currentId = buttonId
+    ? `${buttonId}` 
+    : ''; 
+    
+  const currentCustomId = customId
+    ? `${customId}` 
+    : ''; 
 
   return `
     <button 
-      class="${currentClassName}" 
-      id="modal-order-open"
-      data-modal-open="false"
-      >
-        ${buttonText}
+      class="${currentClassName}"
+      id="${currentId}"
+      data-customId="${currentCustomId}"
+    >
+      ${children}
     </button>
   `;
 };
