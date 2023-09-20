@@ -6,3 +6,4 @@ export { Burger } from './Burger/Burger.js';
 export { BrandLink } from './Brandlink/Brandlink.js';
 export { ModalOrderForm } from './ModalOrderForm/ModalOrderForm.js';
 export { ModalOrderOpen } from './ModalOrderOpen/ModalOrderOpen.js';
+export { ButtonSendOrder } from './ButtonSendOrder/ButtonSendOrder.js';
