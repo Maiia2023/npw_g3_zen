@@ -75,41 +75,19 @@ export const handleBurgerClick = (event) => {
 
 export const handleModalOrderOpenClick = ({ currentTarget }) => {
   const $sectionModalOrder = document.getElementById('section-order');
-  
   $sectionModalOrder.classList.add('visible');
   currentTarget.disabled = true;
 };
 
 /**
- * @function handleButtonModalCloseOrderClick
+ * @function handleModalCloseOrderClick
  * @param {Event} event
  * @returns {void}
  */
 
-export const handleButtonModalCloseOrderClick = ({ currentTarget }) => {
-  const isModalClose = currentTarget.dataset.modalClose === 'false';
-  const $order = document.getElementById('order');
-  
-  if (!isModalClose) {
-    currentTarget.dataset.modalClose = 'true';
-    $order.classList.remove('active');
-  };
-  if (isModalClose) {
-    currentTarget.dataset.modalClose = 'false';
-  };
-};
-
-
-/**
- * @function handleNameInput
- * @param {Event} event
- * @returns {void}
- */
-
-export const handleNameInput = (event) => {
-  const {currentTarget} = event;
-  const {value} = currentTarget;
-  // currentTarget.classList.add('valid');
-  console.log(currentTarget);
-  console.log({value});
+export const handleModalOrderCloseClick = ({ currentTarget }) => {
+  const $sectionModalOrder = document.getElementById('section-order');
+  const $modalOrderOpen = document.querySelector('#modal-order-open');
+  $sectionModalOrder.classList.remove('visible');
+  $modalOrderOpen.disabled = false;
 };
