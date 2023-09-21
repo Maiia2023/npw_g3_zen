@@ -12,7 +12,7 @@ import {
   handleThemeClick,
   handleBurgerClick,
   handleModalOrderOpenClick,
-  // handleModalOrderCloseClick,
+  handleModalOrderCloseClick,
   handleNameInput,
   handleTelInput,
   handleEmailInput,
@@ -43,8 +43,8 @@ $burger.addEventListener('click', handleBurgerClick);
 const $modalOrderOpen = document.querySelector('#modal-order-open');
 $modalOrderOpen.addEventListener('click', handleModalOrderOpenClick);
 
-// const $modalOrderClose = document.querySelector('#modal-order-close');
-// $modalOrderClose.addEventListener('click', handleModalOrderCloseClick);
+const $modalOrderClose = document.querySelector('#modal-order-close');
+$modalOrderClose.addEventListener('click', handleModalOrderCloseClick);
 
 const $orderForm = document.querySelector('#order-form');
 $orderForm.addEventListener('click', handleOrderFormClick);
@@ -56,6 +56,9 @@ $inputName.addEventListener('input', handleNameInput);
 
 const $inputTel = document.querySelector('#input-tel');
 $inputTel.addEventListener('input', handleTelInput);
+
+const $modalOrderClose = document.querySelector('#modal-order-close');
+$modalOrderClose.addEventListener('click', handleModalOrderCloseClick);
 
 const $inputEmail = document.querySelector('#input-email');
 $inputEmail.addEventListener('input', handleEmailInput);

@@ -75,28 +75,21 @@ export const handleBurgerClick = (event) => {
 
 export const handleModalOrderOpenClick = ({ currentTarget }) => {
   const $sectionModalOrder = document.getElementById('section-order');
-  
   $sectionModalOrder.classList.add('visible');
   currentTarget.disabled = true;
 };
 
 /**
- * @function handleButtonModalCloseOrderClick
+ * @function handleModalCloseOrderClick
  * @param {Event} event
  * @returns {void}
  */
 
-export const handleButtonModalCloseOrderClick = ({ currentTarget }) => {
-  const isModalClose = currentTarget.dataset.modalClose === 'false';
-  const $order = document.getElementById('order');
-  
-  if (!isModalClose) {
-    currentTarget.dataset.modalClose = 'true';
-    $order.classList.remove('active');
-  };
-  if (isModalClose) {
-    currentTarget.dataset.modalClose = 'false';
-  };
+export const handleModalOrderCloseClick = ({ currentTarget }) => {
+  const $sectionModalOrder = document.getElementById('section-order');
+  const $modalOrderOpen = document.querySelector('#modal-order-open');
+  $sectionModalOrder.classList.remove('visible');
+  $modalOrderOpen.disabled = false;
 };
 
 /**
@@ -263,4 +256,3 @@ export const handleConnectionChange = ({currentTarget}) => {
     currentTarget.parentElement.classList.remove('invalid');
     currentTarget.parentElement.classList.add('valid');
   };
-};
