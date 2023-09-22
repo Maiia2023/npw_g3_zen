@@ -1,3 +1,5 @@
+import { ButtonSendOrder } from '../../features/index.js';
+
 /**
  * @function ModalOrderForm
  * @returns {string}
@@ -7,13 +9,13 @@ export const ModalOrderForm = () => {
   return `
     <form id="order-form" class="form">
       <label class="form__field">
-        <input id="input-name" type="text" placeholder="Name">
+        <input id="input-name" name="name" type="text" placeholder="Name">
       </label>
       <label class="form__field">
-        <input id="input-tel" type="tel" placeholder="Tel.">
+        <input id="input-tel" name="tel" type="tel" placeholder="Tel.">
       </label>
       <label class="form__field">
-        <input id="input-email" type="email" placeholder="E-mail">
+        <input id="input-email" name="email" type="email" placeholder="E-mail">
       </label>
       <label class="form__field">
         <select class="form__select" name="connection" id="select-connection">
@@ -25,16 +27,10 @@ export const ModalOrderForm = () => {
         </select>
       </label>
       <label class="form__field">
-        <input id="privacy" type="checkbox" checked name="privacy">
+        <input id="privacy" type="checkbox" data-valid="true" checked name="privacy">
         <a href="#">Privacy policy</a>
       </label>
-      <button 
-        type="submit" 
-        class="form__submit"
-        disabled="true"
-      >
-        Submit
-      </button>
+      ${ButtonSendOrder()}
     </form>
   `;
 };

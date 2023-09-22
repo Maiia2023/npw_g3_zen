@@ -13,6 +13,13 @@ import {
   handleBurgerClick,
   handleModalOrderOpenClick,
   handleModalOrderCloseClick,
+  handleNameInput,
+  handleTelInput,
+  handleEmailInput,
+  handleConnectionChange,
+  handleOrderFormClick,
+  handleOrderFormKeyup,
+  handleOrderFormSubmit,
 } from './handlers.js';
 
 const root = document.querySelector('#root');
@@ -39,4 +46,22 @@ $modalOrderOpen.addEventListener('click', handleModalOrderOpenClick);
 const $modalOrderClose = document.querySelector('#modal-order-close');
 $modalOrderClose.addEventListener('click', handleModalOrderCloseClick);
 
+const $orderForm = document.querySelector('#order-form');
+$orderForm.addEventListener('click', handleOrderFormClick);
+$orderForm.addEventListener('keyup', handleOrderFormKeyup);
+$orderForm.addEventListener('submit', handleOrderFormSubmit);
 
+const $inputName = document.querySelector('#input-name');
+$inputName.addEventListener('input', handleNameInput);
+
+const $inputTel = document.querySelector('#input-tel');
+$inputTel.addEventListener('input', handleTelInput);
+
+const $modalOrderClose = document.querySelector('#modal-order-close');
+$modalOrderClose.addEventListener('click', handleModalOrderCloseClick);
+
+const $inputEmail = document.querySelector('#input-email');
+$inputEmail.addEventListener('input', handleEmailInput);
+
+const $Connection = document.querySelector('#select-connection');
+$Connection.addEventListener('change', handleConnectionChange);
