@@ -4,6 +4,18 @@
   padding: 20px;
   background: #fff;
   border-radius: 10px;
+  position: relative;
+}
+
+.order-close {
+  margin-left: auto;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: flex;
+  background: transparent;
 }
 
 .modal__reset {
@@ -51,6 +63,7 @@
 
 
 .modal__title {
+  width: calc(100% - 30px);
   font-size: 20px;
   font-weight: 700;
   color: #000;
