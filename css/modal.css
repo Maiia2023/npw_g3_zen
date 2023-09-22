@@ -18,6 +18,50 @@
   background: transparent;
 }
 
+.modal__reset {
+  display: flex;
+  justify-content: right;
+  padding: 5px;
+}
+
+.reset__button {
+  width: 25px;
+  height: 25px;
+  position: relative;
+  background-color: transparent;
+}
+
+.reset__button::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.reset__button::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #000000;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.reset__button::before {
+  transform: rotate(45deg);
+}
+
+.reset__button::after {
+  transform: rotate(-45deg);
+}
+
+
 .modal__title {
   width: calc(100% - 30px);
   font-size: 20px;

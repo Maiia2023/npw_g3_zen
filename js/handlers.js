@@ -256,3 +256,4 @@ export const handleConnectionChange = ({currentTarget}) => {
     currentTarget.parentElement.classList.remove('invalid');
     currentTarget.parentElement.classList.add('valid');
   };
+};
