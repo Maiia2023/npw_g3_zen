@@ -1,6 +1,6 @@
-import { data } from './data.js';
+import { data } from './data/data.js';
 
-import { 
+import {
   Header,
   SectionPrimary,
   SectionSecondary,
@@ -8,7 +8,7 @@ import {
   SectionOrder,
 } from './widgets/index.js';
 
-import { 
+import {
   handleThemeClick,
   handleBurgerClick,
   handleModalOrderOpenClick,
