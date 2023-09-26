@@ -1,4 +1,4 @@
-import { data } from './data.js';
+import { data } from './data/data.js';
 import { IconSun, IconMoon } from './shared/icons/index.js';
 
 /**
@@ -54,10 +54,10 @@ export const handleThemeClick = (event) => {
  */
 
 export const handleBurgerClick = (event) => {
-  const {currentTarget} = event;
+  const { currentTarget } = event;
   currentTarget.classList.contains('active');
   const $menu = document.querySelector('#menu');
-  
+
   if (currentTarget.classList.contains('active')) {
     $menu.classList.add('active');
   };
@@ -106,7 +106,7 @@ export const handleOrderFormClick = ({ currentTarget }) => {
   const isConnectionValid = currentTarget.elements.connection.dataset.valid === 'true';
   const isPrivacyChecked = currentTarget.elements.privacy.checked;
 
-  const isFieldsValid = 
+  const isFieldsValid =
     isNameValid &&
     isTelValid &&
     isEmailValid &&
@@ -130,7 +130,7 @@ export const handleOrderFormKeyup = ({ currentTarget }) => {
   const isConnectionValid = currentTarget.elements.connection.dataset.valid === 'true';
   const isPrivacyChecked = currentTarget.elements.privacy.checked;
 
-  const isFieldsValid = 
+  const isFieldsValid =
     isNameValid &&
     isTelValid &&
     isEmailValid &&
@@ -148,7 +148,7 @@ export const handleOrderFormKeyup = ({ currentTarget }) => {
 
 export const handleOrderFormSubmit = (event) => {
   event.preventDefault();
-  const { elements } = event.currentTarget;  
+  const { elements } = event.currentTarget;
   const order = {
     name: elements.name.value,
     tel: elements.tel.value,
@@ -190,7 +190,7 @@ export const handleNameInput = ({ currentTarget }) => {
  */
 
 export const handleTelInput = ({ currentTarget }) => {
-const { value }= currentTarget;
+  const { value } = currentTarget;
   const regexpTel = /^[0-9]{11}$/;
 
   if (!value.length) {
@@ -243,7 +243,7 @@ export const handleEmailInput = ({ currentTarget }) => {
  * @returns {void}
  */
 
-export const handleConnectionChange = ({currentTarget}) => {
+export const handleConnectionChange = ({ currentTarget }) => {
   const { value } = currentTarget;
 
   if (!value.length) {
