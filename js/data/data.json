@@ -192,27 +192,27 @@
           "links": [
             {
               "type": "text",
-              "url": "https//:example.com",
+              "url": "https://example.com",
               "content": "Help center"
             },
             {
               "type": "text",
-              "url": "https//:example.com",
+              "url": "https://example.com",
               "content": "Join ZEN team"
             },
             {
               "type": "text",
-              "url": "https//:example.com",
+              "url": "https://example.com",
               "content": "Privacy Policy"
             },
             {
               "type": "text",
-              "url": "https//:example.com",
+              "url": "https://example.com",
               "content": "Cookies"
             },
             {
               "type": "text",
-              "url": "https//:example.com",
+              "url": "https://example.com",
               "content": "Terms of use"
             }
           ]
@@ -225,17 +225,17 @@
           "links": [
             {
               "type": "text",
-              "url": "htts//example.com",
+              "url": "https://example.com",
               "content": "For developers"
             },
             {
               "type": "text",
-              "url": "htts//example.com",
+              "url": "https://example.com",
               "content": "Apple Pay"
             },
             {
               "type": "text",
-              "url": "htts//example.com",
+              "url": "https://example.com",
               "content": "Google Pay"
             }
           ]
@@ -494,27 +494,27 @@
           "links": [
             {
               "type": "text",
-              "url": "https//:example.com",
+              "url": "https://example.com",
               "content": "Центр помощи"
             },
             {
               "type": "text",
-              "url": "https//:example.com",
+              "url": "https://example.com",
               "content": "Присоединяйтесь"
             },
             {
               "type": "text",
-              "url": "https//:example.com",
+              "url": "https://example.com",
               "content": "Политика"
             },
             {
               "type": "text",
-              "url": "https//:example.com",
+              "url": "https://example.com",
               "content": "Файлы cookie"
             },
             {
               "type": "text",
-              "url": "https//:example.com",
+              "url": "https://example.com",
               "content": "Правила"
             }
           ]
@@ -527,17 +527,17 @@
           "links": [
             {
               "type": "text",
-              "url": "htts//example.com",
+              "url": "https://example.com",
               "content": "Разработчикам"
             },
             {
               "type": "text",
-              "url": "htts//example.com",
+              "url": "https://example.com",
               "content": "Apple Pay"
             },
             {
               "type": "text",
-              "url": "htts//example.com",
+              "url": "https://example.com",
               "content": "Google Pay"
             }
           ]
