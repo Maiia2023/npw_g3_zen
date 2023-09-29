@@ -2,7 +2,7 @@
 
 .footer {
   background: #484848;
-  color: fff;
+  color: #fff;
 }
 
 .footer__wrapper {
@@ -24,4 +24,5 @@
 }
 
 .footer__dev {
+  
 }

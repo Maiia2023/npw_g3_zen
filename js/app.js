@@ -6,6 +6,7 @@ import {
   SectionSecondary,
   SectionTertiary,
   SectionOrder,
+  Footer,
 } from './widgets/index.js';
 
 import {
@@ -33,6 +34,7 @@ root.insertAdjacentHTML('beforeend', SectionPrimary(en.care));
 root.insertAdjacentHTML('beforeend', SectionSecondary(en.cashback));
 root.insertAdjacentHTML('beforeend', SectionTertiary(en.clients));
 root.insertAdjacentHTML('beforeend', SectionOrder());
+root.insertAdjacentHTML('beforeend', Footer(en.footer));
 
 const $theme = document.querySelector('#theme');
 $theme.addEventListener('click', handleThemeClick);
