@@ -34,12 +34,12 @@ export const SectionPrimary = (data) => {
         <div class="${className}__text-block">
           ${title ? Title(title, className) : ''}
           ${texts.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
-          ${image ? Image(image, className) : ''}
           <div class="${className}__links">
-            ${google ? BrandLink(google, 'google', className) : ''}
             ${apple ? BrandLink(apple, 'apple', className) : ''}
+            ${google ? BrandLink(google, 'google', className) : ''}
           </div>
         </div>
+        ${image ? Image(image, className) : ''}
       </div>
     </section>
   `;

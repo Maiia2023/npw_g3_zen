@@ -22,9 +22,13 @@ export const Footer = (data) => {
         <div class="${className}__columns">
         </div>
         <div class="${className}__info">
-          ${LogoFooter()}
-          ${texts?.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
-          ${Developer(developer, className)}
+          <div class="${className}__content">
+            ${LogoFooter()}
+            ${texts?.length > 0 ? texts.map((text) => Text(text, className)).join('') : ''}
+          </div>
+          <div class="${className}__developer">
+            ${Developer(developer, className)}
+          </div>
         </div>
       </div>
     </footer>
