@@ -1,6 +1,10 @@
 export const data = {
   en: {
     header: {
+      logo: {
+        source: 'assets/icons/logo.svg',
+        description: 'logo',
+      },
       langs: ['en', 'ru'],
       nav: [
         {
