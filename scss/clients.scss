@@ -1,7 +1,8 @@
 /*clients*/
 
+@import 'vars';
+
 .clients {
-  border: dashed 2px;
   background: inherit;
   padding: 30px 15px;
 }
@@ -11,24 +12,18 @@
 }
 
 .clients__wrapper {
-}
 
-@media(min-width: 768px) {
-  .clients__wrapper {
+  @media(min-width: $breakpoint-md) {
     width: 690px;
     margin: 0 auto;
   }
-}
 
-@media(min-width: 1152px) {
-  .clients__wrapper {
+  @media(min-width: $breakpoint-lg) {
     width: 930px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: 1440px) {
-  .clients__wrapper {
+  @media (min-width: $breakpoint-xl) {
     width: 1110px;
     margin: 0 auto;
   }
@@ -38,26 +33,20 @@
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(2, 1fr);
-}
 
-@media (min-width: 768px) {
-  .clients__brands {
+  @media (min-width: $breakpoint-md) {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(4, 1fr);
   }
-}
 
-@media (min-width: 1152px) {
-  .clients__brands {
+  @media (min-width: $breakpoint-lg) {
     display: grid;
     gap: 43px;
     grid-template-columns: repeat(4, 1fr);
   }
-}
 
-@media (min-width: 1440px) {
-  .clients__brands {
+  @media (min-width: $breakpoint-xl) {
     display: grid;
     gap: 30px;
     grid-template-columns: repeat(5, 1fr);

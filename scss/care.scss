@@ -1,32 +1,28 @@
 /*care*/
 
+@import 'vars';
+
 .care {
   padding: 20px 15px;
 }
 
 .care__wrapper {
-}
 
-@media (min-width: 768px) {
-  .care__wrapper {
+  @media (min-width: $breakpoint-md) {
     display: flex;
     gap: 30px;
     width: 690px;
     margin: 0 auto;
   }
-}
-
-@media (min-width: 1152px) {
-  .care__wrapper {
+  
+  @media (min-width: $breakpoint-lg) {
     display: flex;
     gap: 40px;
     width: 930px;
     margin: 0 auto;
   }
-}
 
-@media (min-width: 1440px) {
-  .care__wrapper {
+  @media (min-width: $breakpoint-xl) {
     display: flex;
     gap: 110px;
     width: 1110px;
@@ -35,28 +31,22 @@
 }
 
 .care__text-block {
-}
 
-@media (min-width: 768px) {
-  .care__text-block {
+  @media (min-width: $breakpoint-md) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1;
   }
-}
 
-@media (min-width: 1152px) {
-  .care__text-block {
+  @media (min-width: $breakpoint-lg) {
     display: flex;
     flex-direction: column;
     justify-content: center;
     flex: 1;
   }
-}
 
-@media (min-width: 1440px) {
-  .care__text-block {
+  @media (min-width: $breakpoint-xl) {
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -67,23 +57,17 @@
 .care__title {
   font-size: 25px;
   font-weight: 700;
-}
 
-@media (min-width: 768px) {
-  .care__title {
+  @media (min-width: $breakpoint-md) {
     font-size: 30px;
   }
-}
 
-@media (min-width: 1152px) {
-  .care__title {
+  @media (min-width: $breakpoint-lg) {
     font-size: 34px;
     line-height: 50px;
   }
-}
 
-@media (min-width: 1440px) {
-  .care__title {
+  @media (min-width: $breakpoint-xl) {
     font-size: 40px;
     line-height: 60px;
   }
@@ -92,28 +76,22 @@
 .care__copy {
   margin-top: 10px;
   line-height: 20px;
-}
 
-@media (min-width: 768px) {
-  .care__copy {
+  @media (min-width: $breakpoint-md) {
     font-size: 16px;
     line-height: 25px;
-  }  
-}
+  }
 
-@media (min-width: 1152px) {
-  .care__copy {
+  @media (min-width: $breakpoint-lg) {
     font-size: 18px;
     line-height: 25px;
-  }  
-}
+  }
 
-@media (min-width: 1440px) {
-  .care__copy {
+  @media (min-width: $breakpoint-xl) {
     padding-top: 15px;
     font-size: 20px;
     line-height: 30px;
-  }  
+  }
 }
 
 .care__copy:first-of-type {
@@ -128,27 +106,18 @@
   border: 1px solid #aaaaaa;
   border-radius: 20px;
   overflow: hidden;
-}
 
-.care__image {
-}
-
-@media (min-width: 768px) {
-  .care__image {
+  @media (min-width: $breakpoint-md) {
     margin-top: 0;
     flex: 1;
   }
-}
 
-@media (min-width: 1152px) {
-  .care__image {
+  @media (min-width: $breakpoint-lg) {
     margin-top: 0;
     flex: 1;
   }
-}
 
-@media (min-width: 1440px) {
-  .care__image {
+  @media (min-width: $breakpoint-xl) {
     margin-top: 0;
     flex: 1;
   }
