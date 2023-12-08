@@ -276,10 +276,12 @@ export const data = {
             priority: 3,
             content: 'Follow us',
           },
-          link: {
-            type: 'in',
-            url: 'https://linkedin.com/',
-          },
+          links: [
+            {
+              type: 'in',
+              url: 'https://linkedin.com/',
+            },
+          ],
         },
       ],
       texts: [
@@ -573,10 +575,12 @@ export const data = {
             priority: 3,
             content: 'Следите',
           },
-          link: {
-            type: 'in',
-            url: 'https://linkedin.com/',
-          },
+          links: [
+            {
+              type: 'in',
+              url: 'https://linkedin.com/',
+            },
+          ],
         },
       ],
       texts: [
